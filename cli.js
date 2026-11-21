@@ -13,6 +13,7 @@
  */
 import { readFile, writeFile } from "node:fs/promises";
 import { basename } from "node:path";
+import { formatTokenSummary } from "./token-summary.js";
 
 const API_BASE = process.env.PACKFORAI_BASE_URL ?? "https://packforai.com/api/v1";
 const API_KEY = process.env.PACKFORAI_API_KEY;
@@ -110,10 +111,8 @@ async function main() {
   if (job.status === "failed") fail(`conversion failed: ${job.error ?? "unknown error"}`);
 
   const markdown = job.markdown ?? "";
-  const t = job.tokens ?? {};
-  if (t.original != null) {
-    process.stderr.write(`Done — ${t.original} to ${t.compact} tokens (${t.savingsPercent}% smaller).\n`);
-  }
+  const tokenSummary = formatTokenSummary(job.tokens);
+  if (tokenSummary) process.stderr.write(`Done: ${tokenSummary}.\n`);
 
   if (opts.out) {
     await writeFile(opts.out, markdown, "utf8");
