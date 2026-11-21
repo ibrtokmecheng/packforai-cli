@@ -39,7 +39,7 @@ packforai scan.pdf --ocr                      # OCR a scanned PDF
 packforai data.xlsx --full > data.md          # full spreadsheet tables
 ```
 
-Markdown goes to stdout (so you can pipe it), progress and token savings go to stderr.
+Markdown goes to stdout (so you can pipe it), progress and the token comparison go to stderr.
 
 ## Config
 
