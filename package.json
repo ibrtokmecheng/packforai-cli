@@ -7,7 +7,7 @@
   "files": ["cli.js", "token-summary.js", "README.md", "LICENSE"],
   "keywords": ["packforai", "cli", "pdf", "docx", "markdown", "ai", "llm", "convert"],
   "homepage": "https://packforai.com",
-  "repository": { "type": "git", "url": "git+https://github.com/zymsj8j9z9-ship-it/packforai-cli.git" },
+  "repository": { "type": "git", "url": "git+https://github.com/ibrtokmecheng/packforai-cli.git" },
   "license": "MIT",
   "engines": { "node": ">=18" }
 }
