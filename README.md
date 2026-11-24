@@ -7,7 +7,7 @@ Convert **PDF, DOCX, PPTX, XLSX, CSV and JSON** into clean, compact, AI-ready Ma
 Run without installing:
 
 ```bash
-export PACKFORAI_API_KEY="your_key"   # from https://packforai.com/account (Pro)
+export PACKFORAI_API_KEY="your_key"   # from https://packforai.com/account (any plan)
 npx packforai-cli report.pdf
 ```
 
@@ -43,7 +43,7 @@ Markdown goes to stdout (so you can pipe it), progress and the token comparison 
 
 ## Config
 
-- `PACKFORAI_API_KEY` (required) — your PackForAI API key. Create one at [packforai.com/account](https://packforai.com/account) (Pro plan).
+- `PACKFORAI_API_KEY` (required) — your PackForAI API key. Create one at [packforai.com/account](https://packforai.com/account). Every plan includes API access; the free plan allows 3 conversions a day.
 - `PACKFORAI_BASE_URL` (optional) — override the API base.
 
 ## Links
