@@ -1,6 +1,6 @@
 {
   "name": "packforai-cli",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Command-line tool for PackForAI — convert PDF, DOCX, PPTX, XLSX, CSV, JSON into clean, AI-ready Markdown from your terminal.",
   "type": "module",
   "bin": { "packforai": "cli.js" },

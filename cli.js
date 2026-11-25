@@ -3,7 +3,7 @@
  * PackForAI CLI — convert a document to clean, AI-ready Markdown from the terminal.
  *
  * Usage:
- *   export PACKFORAI_API_KEY="your_key"          # from https://packforai.com/account (Pro)
+ *   export PACKFORAI_API_KEY="your_key"          # from https://packforai.com/account (every plan)
  *   packforai <file-or-url> [--ocr] [--full] [-o out.md]
  *
  * Examples:
@@ -31,7 +31,8 @@ Options:
 
 Environment:
   PACKFORAI_API_KEY   Your PackForAI API key (required). Get one at
-                      https://packforai.com/account (Pro plan).
+                      https://packforai.com/account (every plan, the free
+                      plan included: 3 conversions a day).
 `;
 
 function parseArgs(argv) {
